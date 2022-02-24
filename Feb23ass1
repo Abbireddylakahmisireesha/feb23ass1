@@ -1,0 +1,26 @@
+I=[]
+n=int(input("enter n"))
+for i in range(n):
+  x=int(input())
+  I.append(x)
+min=I[0]
+max=I[0]
+for i in range(1,n):
+  if I[i]<min:
+    min=I[i]
+print("minimum value:",min)
+for i in range(1,n):
+   if I[i]>max:
+     max=I[i]
+print("maximum value:",max)
+
+output:
+enter n
+5
+10
+15
+20
+25
+30 
+minimum value: 10
+maximum value: 30
